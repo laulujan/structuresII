@@ -22,19 +22,19 @@ function romanos(N){
     console.log(nums);
     var resp = "";
     let n= N;
-    var count = nums.length();
-    console.log(count);
-    let my_keys = get_keys(nums);
-    
+  let my_index = Object.keys(nums).length;
+  let my_keys = Object.keys(nums);
+
     while(n>0){
-        
-        if(my_keys[count]>n)
+      console.log('entra en bucle');
+      if (my_keys[my_index]>=n)
         {
-            resp = resp + nums[count];
-            n = n - my_keys[count];
+        console.log(my_index)
+        resp = resp.concat(nums[my_index]);
+        n = n - my_keys[my_index];
         }
         else{
-            count = count -1;
+          my_index = my_index - 1;
         }
     }
     return resp;
