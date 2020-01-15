@@ -138,7 +138,12 @@ list.insertAtBeginning("Soy el index 0");
 list.insertAt("soy el index 1",1);
 list.insertAt("soy el index 2", 2);
 list.insertAt("soy el index 3", 3);
+mynode = list.getAt(0);
+console.log(mynode);
 
-mynode = list.getAt(1)
+list.insertAt("soy el otro", 2);
+console.log(mynode);
 
-console.log(mynode.data)
+
+
+

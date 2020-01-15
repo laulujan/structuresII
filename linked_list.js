@@ -24,3 +24,5 @@ LinkedList.prototype.insertAtBeginning = function (data) {
 
 // A list object is created with a property head, currently pointing at null
 let list = new LinkedList();
+LinkedList.insertAtBeginning("HOLA")
+console.log(LinkedList);
