@@ -1,22 +1,3 @@
-
-function values (nums) {
-    const values = [];
-    for (let key in nums.items) {
-      if (nums.has(key)) {
-        values.push(nums.items[key])
-      }
-    }
-    return values
-  };
-
-  function get_keys (nums) {
-    const keys = []
-    for (let key in nums.items) {
-    	keys.push(keys)
-    }
-    return keys
-};
-
 function romanos(N){
   var nums = { 1: "I", 5: "V", 9: "IX", 10: "X", 40:"XL", 50: "L" };
     var resp = "";
