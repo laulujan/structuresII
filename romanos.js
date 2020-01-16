@@ -18,19 +18,17 @@ function values (nums) {
 };
 
 function romanos(N){
-    var nums = { 1: "I", 2: "V", 10: "X", 50: "L" };
-    console.log(nums);
+  var nums = { 1: "I", 5: "V", 9: "IX", 10: "X", 40:"XL", 50: "L" };
     var resp = "";
     let n= N;
   let my_index = Object.keys(nums).length;
   let my_keys = Object.keys(nums);
 
     while(n>0){
-      console.log('entra en bucle');
-      if (my_keys[my_index]>=n)
+      if (my_keys[my_index]<=n)
         {
-        console.log(my_index)
-        resp = resp.concat(nums[my_index]);
+        nkey = my_keys[my_index];
+        resp = resp.concat(nums[nkey]);
         n = n - my_keys[my_index];
         }
         else{
@@ -40,4 +38,4 @@ function romanos(N){
     return resp;
 };
 
-console.log(romanos(10));
+console.log(romanos(45));
